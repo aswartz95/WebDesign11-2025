@@ -27,10 +27,10 @@ h1 {text-transform: uppercase;
     padding: 5px;
     text-align: center;
   }
-  .aviatar {
+  .avatar {
     height:250px;
     width: 250px;
     border-radius: 50%;
     object-fit: cover;
   }
-  </style>
+   < /style>    
