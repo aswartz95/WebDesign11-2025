@@ -1,26 +1,62 @@
+@import "variables"; 
 @use "vendor/normalize";
 @use "partials/color";
 
 
-nav {
-    background-color: black;
-    ul {
-        li{
-            list-style: none;
-            display: inline;
-            padding: 5px;
-            a {
-                color: colors.$primary-color;
-                text-decoration: none;
-            }
-        }
-    }
+body {
+    background-color: #150300;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
-.primary {
-    background-color: colors.$primary-color;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #414141;
 }
 
-primar-two {
-    background-color: colors.$primary-color;
+nav ul li {
+    display: inline-block;
+    margin: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.hero {
+    padding: 50px 10px;
+    background-color: #DB8D33;
+}
+
+.hero h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+figure img {
+    max-width: 100%;
+    border: 2px solid white;
+}
+
+footer {
+    padding: 10px;
+    background-color: #414141;
+    margin-top: 20px;
 }
