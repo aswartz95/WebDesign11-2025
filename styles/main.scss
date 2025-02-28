@@ -1,10 +1,12 @@
-@import "variables"; 
+//@import "variables"; 
+//@use "vendor/normalize";
+//@use "partials/color";
 @use "vendor/normalize";
 @use "partials/color";
-
+@use "partials/variables";
 
 body {
-    background-color: #150300;
+    background-color: color.$darker-background; 
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
