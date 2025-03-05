@@ -1,64 +1,25 @@
 //@import "variables"; 
-//@use "vendor/normalize";
-//@use "partials/color";
+//@import "vendor/normalize";
+//@import "partials/color";
 @use "vendor/normalize";
-@use "partials/color";
+@use "partials/base";
+@use "partials/colors";
+@use "partials/mixins";
 @use "partials/variables";
+@use "partials/typography";
+
 
 body {
-    background-color: color.$darker-background; 
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
+    font-family: typography.$primary-font;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #414141;
+.menu {
+    h2 {
+        @include mixins.script-heading();
+    }
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 15px;
+.main-link{
+    @include mixins.main-link();
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.hero {
-    padding: 50px 10px;
-    background-color: #DB8D33;
-}
-
-.hero h1 {
-    font-size: 36px;
-    text-transform: uppercase;
-}
-
-.hero p {
-    font-size: 18px;
-}
-
-.content {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-}
-
-figure img {
-    max-width: 100%;
-    border: 2px solid white;
-}
-
-footer {
-    padding: 10px;
-    background-color: #414141;
-    margin-top: 20px;
-}

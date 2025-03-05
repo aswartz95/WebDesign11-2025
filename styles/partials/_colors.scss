@@ -1,0 +1,15 @@
+$primary-font-color: #575757;
+$secondary-font-color: #DB8D33;
+$primary-background: white;
+$light-background: white;
+$darker-background: black;
+$primary-color: #ff6347
+
+body {
+    background-color: $darker-background;  
+    color: $primary-font-color; 
+}
+
+h1, h2 {
+    color: $secondary-font-color;
+}
